@@ -27,7 +27,7 @@ pipeline {
     }
     stage ('Deliver') {
       steps {
-        container ('pyinstaller') {
+        container ('python') {
           sh 'pyinstaller -v'
         }
         post {
