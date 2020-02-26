@@ -28,7 +28,7 @@ pipeline {
     stage ('Deliver') {
       steps {
         container ('pyinstaller') {
-          sh "docker run -v $(pwd -P):/src cdxr/pyinstaller -v"
+          sh 'docker run -v $(pwd -P):/src cdxr/pyinstaller -v'
         }
         post {
           success {
