@@ -8,3 +8,8 @@ spec:
     command:
     - cat
     tty: true
+  - name: pytest
+    image: qnib/pytest
+    command:
+    - cat
+    tty: true
