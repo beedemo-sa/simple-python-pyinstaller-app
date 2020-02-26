@@ -4,7 +4,10 @@ pipeline {
       label 'python-alpine-pod'
        yamlFile 'py-pod.yaml'
      }
-  }  
+  }
+  options {
+    skipStagesAfterUnstable()
+  }
   stages {
     stage ('Build') {
       steps {
