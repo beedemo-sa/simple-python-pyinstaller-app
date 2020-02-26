@@ -13,3 +13,8 @@ spec:
     command:
     - cat
     tty: true
+  - name: pyinstaller
+    image: cdrx/pyinstalle
+    command:
+    - cat
+    tty: true
