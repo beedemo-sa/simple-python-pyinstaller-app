@@ -28,11 +28,11 @@ pipeline {
     stage ('Deliver') {
       steps {
         container ('pyinstaller') {
-          sh 'pyinstaller --onefile sources/add2vals.py'
+          sh 'pyinstaller -v'
         }
         post {
           success {
-            archiveArtifacts 'dist/add2vals'
+            echo 'archiveArtifacts dist/add2vals'
           }
         }
       }
