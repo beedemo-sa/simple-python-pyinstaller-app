@@ -14,7 +14,7 @@ spec:
     - cat
     tty: true
   - name: pyinstaller
-    image: cdrx/pyinstalle
+    image: cdrx/pyinstaller-linux:python2
     command:
     - cat
     tty: true
