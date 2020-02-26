@@ -30,12 +30,13 @@ pipeline {
         container ('pyinstaller') {
           echo 'pyinstaller --onefile sources/add2vals.py'
         }
-        post {
-          success {
-            echo 'archiveArtifacts dist/add2vals'
-          }
+      }
+      post {
+        success {
+          echo 'archiveArtifacts dist/add2vals'
         }
       }
     }
+   }
   }
 }
