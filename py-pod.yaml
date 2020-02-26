@@ -8,3 +8,13 @@ spec:
     command:
     - cat
     tty: true
+  - name: pytest
+    image: qnib/pytest
+    command:
+    - cat
+    tty: true
+  - name: pyinstaller
+    image: cdrx/pyinstaller-linux:python2
+    command:
+    - cat
+    tty: true
